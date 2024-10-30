@@ -1,25 +1,28 @@
 <html>
-    <canvas id="canvas" style="background-color: rgb(240, 236, 3);"  with="300" height="300" ></canvas>
-    </html>
-    <script>
-        const canvas= document.getElementById ('canvas');
-        const pincel= canvas.getContext ('2d');
-        pincel. fillStyle= 'blue';
-        pincel. fillRect (50,50,30,30);
-        let x= 30;
-        let y= 30;
-        function mover ()  {
-            pincel. clearRect  (0, 0, 250, 250 );
-            pincel. fillRect ( x, y, 25,25 )
-            x= x+1;
-            y= y+1;
-            if ( x > 250 ) {
-            x=25;
-            }
-            if( y > 300) {
-                y=30;
-            }
-        }
-        setInterval(mover,1);
-        
-    </script>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/global.css"
+</head>
+  <body>
+    <form method="#" action="#URL">
+     <h1>Login:</h1>
+      <p>
+       <label for="nome_login">Usuário:</label>
+       <input id="nome_login" name="nome_login" type="text"/>
+      </p>
+      <p>
+       <label for="senha_login">Senha:</label>
+       <input id="senha_login" name="senha_login" type="password"/>
+      </p>
+       <p>
+         <label>
+        <input type="checkbox" name="manter logado" value="sim"/> Manter logado
+         </label>
+       </p>
+      <p> <button type="submit" >Login</button> </p>
+      <p> <a href="#URL">Ainda não tem conta?</a></p>
+      <p> <a href="#URL">Esqueceu a Senha?</a></p>
+  </body>
+</html>
